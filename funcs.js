@@ -1,14 +1,58 @@
 function isFive(num) {
-  // Your code here 
+
+  if(num === 5) {
+
+    return true;
+
+  } else {
+
+    return false;
+
+  }
+
 }
 
 function isOdd(number) {
-  // Your code here 
+
+  if (typeof number !== 'number') {
+    throw new Error('Input must be a number');
+  }
+
+
+  if(number % 2 !== 0) {
+
+    return true;
+
+  }
+  else if(number % 2 === 0)
+
+    return false;
+
 }
 
+
+
+
+
 function myRange(min, max, step = 1) {
-  // Your code here 
+
+  let result = [];
+
+  if(min <= max) {
+
+  for (let i = min; i < max; i += step) {
+
+    result.push(i);
+
+  }
+
+  return result;
+
 }
+
+}
+
+
 
 
 module.exports = { isFive, isOdd, myRange };
