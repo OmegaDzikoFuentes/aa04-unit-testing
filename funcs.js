@@ -40,16 +40,15 @@ function myRange(min, max, step = 1) {
 
   if(min <= max) {
 
-  for (let i = min; i < max; i += step) {
+  for (let i = min; i < max + 1; i += step) {
 
     result.push(i);
 
   }
 
-  return result;
-
 }
 
+    return result;
 }
 
 
